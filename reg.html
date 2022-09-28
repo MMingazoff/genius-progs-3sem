@@ -1,0 +1,34 @@
+
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div align="center">
+    <h3 class="text-center mb-4">Регистрация</h3>
+    <form style="width: 320px" onsubmit="return false">
+        <label>Логин:
+            <input type="text" id="login" placeholder="Введите имя пользователя" >
+        </label>
+        <label>Электронная почта:
+            <input type="text" id="email" placeholder="Введите вашу электронную почту" >
+        </label>
+        <label>Дата рождения:
+            <input type="date" id="birth_date">
+        </label>
+        <label>Пароль:
+            <input type="password" id="password" placeholder="Придумайте пароль" >
+        </label>
+        <label>Подтвердите пароль:
+            <input type="password" id="password_two" placeholder="Введите пароль заново" >
+        </label>
+        <button class="registration" type="submit" onclick="checkRegistration()">Зарегистрироваться</button>
+    </form>
+</div>
+<br/>
+<script src="script.js"></script>
+</body>
+</html>
